@@ -1,0 +1,33 @@
+
+div{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: black;
+
+}
+div h1{
+    height: max-content;
+    position: relative;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+div h1::after{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: pink;
+    top: 35px;
+    transition: 0.5s;
+    transform: scaleX(0);
+
+}
+div h1:hover::after{
+    transform: scaleX(1);
+}
